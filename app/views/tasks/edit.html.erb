@@ -1,0 +1,5 @@
+<div class="margin-left">
+  <h1>Edit <%= @task.title %> </h1>
+  <%= @task.new_record? ? (render 'form-without-complete', task: @task) : (render 'form-with-complete', task: @task)%>
+  <br><br><br>
+</div>

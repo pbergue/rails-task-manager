@@ -1,0 +1,12 @@
+<div class="margin-left">
+  <h1>Create a new task</h1>
+
+  <%= @task.new_record? ? (render 'form-without-complete', task: @task) : (render 'form-with-complete', task: @task)%>
+
+  <br><br><br>
+
+  <%= link_to tasks_path do %>
+      <i class="fas fa-chevron-circle-left"></i> Back to all tasks
+  <% end %>
+
+</div>
