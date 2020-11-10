@@ -1,0 +1,9 @@
+<div class="margin-left">
+  <h1>My tasks</h1>
+  <% @tasks.each do |task| %>
+
+    <%= task.completed ? "✔️" : "❌" %>
+    <%= link_to((task.title), task_path(task)) %>
+    <br>
+  <% end %>
+</div>
